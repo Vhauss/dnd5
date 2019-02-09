@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <script src="js/script.js"></script>
+</head>
+<body class="appBody">
+    <div class="content">
+        <div class="display">
+            <h1>Spell Sheet</h1>
+            <div class="buttonRow">
+                    <button class="btn btn-success" onclick="getClassSpells('wizard')">Wizard</button>
+                    <button class="btn btn-success" onclick="getClassSpells('bard')">Bard</button>
+                    <button class="btn btn-success" onclick="getClassSpells('druid')">Druid</button>
+                    <button class="btn btn-success" onclick="getClassSpells('warlock')">Warlock</button>
+                    <button class="btn btn-success" onclick="getClassSpells('sorcerer')">Sorcerer</button>
+                    <button class="btn btn-success" onclick="getClassSpells('ranger')">Ranger</button>
+                    <button class="btn btn-success" onclick="getClassSpells('cleric')">Cleric</button>
+                    <button id="return" class="btn btn-primary" onclick="toTop()">Go to top</button>
+            </div>
+            <div class="mobileSelection">
+                <select class="form-control" name="classNames" id="classDropdown" onchange="classChange()">
+                    <option value="none">Select a class</option>
+                    <option value="wizard">Wizard</option>
+                    <option value="bard">Bard</option>
+                    <option value="druid">Druid</option>
+                    <option value="warlock">Warlock</option>
+                    <option value="sorcerer">Sorcerer</option>
+                    <option value="ranger">Ranger</option>
+                    <option value="cleric">Cleric</option>
+                </select>
+            </div>
+            <div class="searchContainer">
+                <label>Search: </label> <input type="text" id="search" onkeyup="search()">
+            </div>
+            <hr>
+            <div>
+                <h2>Spells:</h2>
+                <div id="spellContainer">
+        
+                </div>
+            </div>
+        </div>
+   </div>
+</body>
+</html>

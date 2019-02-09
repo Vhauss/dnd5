@@ -1,0 +1,54 @@
+.appBody {
+    background-color: #323639;
+    color: white;
+}
+
+.display {
+    margin: 2rem 10rem;
+}
+
+@media (max-width:1024px) {
+    .display {
+        margin: 20px;
+    }
+
+    .buttonRow {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 2222px) {
+    .mobileSelection {
+        display: none;
+    }
+ }
+
+ @media only screen and (max-width: 1024px) {
+    .mobileSelection {
+        display: block;
+    }
+ }
+
+.content {
+    min-height: calc(100vh - 70px);
+}
+
+#spellContainer {
+    max-height: 70vh;
+    overflow: auto;
+}
+
+hr {
+    border-color: white;
+    color: white;
+    background-color: white;
+}
+
+#return {
+    float:right;
+}
+
+.searchContainer {
+    padding-top: 1rem;
+}
